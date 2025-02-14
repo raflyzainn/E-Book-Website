@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <title>Book</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Lumpu - Tere Liye</title>
     <style>
         section {
             padding: 60px 0;
@@ -19,7 +20,8 @@
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="#intro">
                 <span class="text-secondary fw-bold">
-                Net Ninja Pro - the Book
+                <i class="bi bi-book-half"></i>    
+                Lumpu - Tere Liye
                 </span>
             </a>
             <!-- toggle button for mobile nav -->
@@ -31,21 +33,20 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#topics">About The Book</a>
+                    <a class="nav-link" href="#topics">Tentang Buku</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#reviews">Reviews</a>
+                    <a class="nav-link" href="#reviews">Ulasan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Get in Touch</a>
+                    <a class="nav-link" href="#contact">Hubungi Kami</a>
                 </li>
                 <li class="nav-item d-md-none">
-                    <a class="nav-link" href="#pricing">Pricing</a>
+                    <a class="nav-link" href="#pricing">Harga</a>
                 </li>
                 <li class="nav-item ms-2 d-none d-md-inline">
-                    <a class="btn btn-secondary" href="#pricing">Buy Now</a>
+                    <a class="btn btn-secondary" href="#pricing">Beli Sekarang</a>
                 </li>
-                
                 </ul>
             </div>
         </div>
@@ -54,27 +55,341 @@
     <!-- main image & intro text -->
     <section id="intro">
         <div class="container-lg">
-          <div class="row g-4 justify-content-center align-items-center">
+        <div class="row g-4 justify-content-center align-items-center">
             <div class="col-md-5 text-center text-md-start">
-              <h1>
-                <div class="display-2">Black-Belt</div>
-                <div class="display-5 text-muted">Your Coding Skills</div>
-              </h1>
-              <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
-              <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <h1>
+                <div class="display-2">Lumpu</div>
+                <div class="display-5 text-muted">Serial Bumi #12</div>
+            </h1>
+            <p class="lead my-4 text-muted">Kisah seorang gadis bernama Lumpu dengan kekuatan spesialnya yang mengungkap misteri di dunia paralel. Buku ke-12 dari serial Bumi karya Tere Liye.</p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Beli Sekarang</a>
             </div>
             <div class="col-md-5 text-center d-none d-md-block">
-              <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook">
+            <!-- tooltip -->
+            <span class="tt" data-bs-placement="bottom" title="Sampul buku Lumpu">
+                <img src="/assets/lumpu.png" class="img-fluid" alt="Sampul buku Lumpu">
+            </span>
             </div>
-          </div>
+        </div>
         </div>
     </section>
 
-    <!-- pricing plans -->
+      <!-- pricing plans -->
+      <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+          <div class="text-center">
+            <h2>Pilihan Edisi</h2>
+            <p class="lead text-muted">Pilih edisi buku yang sesuai dengan keinginanmu.</p>
+          </div>
+    
+          <div class="row my-5 g-0 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div class="card-body text-center py-4">
+                  <h4 class="card-title">Edisi Reguler</h4>
+                  <p class="lead card-subtitle">Buku Fisik Paperback</p>
+                  <p class="display-5 my-4 text-primary fw-bold">Rp 99.000</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Buku fisik dengan cover reguler, kertas bookpaper berkualitas tinggi. Cocok untuk pembaca yang menginginkan pengalaman membaca tradisional.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Beli Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-9 col-lg-4">
+              <div class="card border-primary border-2">
+                <div class="card-header text-center text-primary">Paling Populer</div>
+                <div class="card-body text-center py-5">
+                  <h4 class="card-title">Edisi Spesial</h4>
+                  <p class="lead card-subtitle">Hardcover + Bonus</p>
+                  <p class="display-4 my-4 text-primary fw-bold">Rp 185.000</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Edisi hardcover eksklusif dengan sampul spesial, bookmark eksklusif, dan poster karakter. Sempurna untuk kolektor dan penggemar setia.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Beli Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-8 col-lg-4 col-xl-3">
+              <div class="card border-0">
+                <div class="card-body text-center py-4">
+                  <h4 class="card-title">Edisi Digital</h4>
+                  <p class="lead card-subtitle">eBook Format</p>
+                  <p class="display-5 my-4 text-primary fw-bold">Rp 75.000</p>
+                  <p class="card-text mx-5 text-muted d-none d-lg-block">Format eBook yang bisa dibaca di berbagai perangkat. Termasuk fitur pencarian dan pembatas buku digital.</p>
+                  <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                    Beli Sekarang
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- topics at a glance -->
+    <section id="topics">
+        <div class="container-md">
+          <div class="text-center">
+            <h2>Isi Buku...</h2>
+            <p class="lead text-muted">Sekilas tentang petualangan yang akan kamu temukan</p>
+          </div>
+          <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+              <img src="/assets/lumpu.png" class="img-fluid" alt="ebook">
+            </div>
+            <div class="col-lg-6">
+              
+              <!-- accordion -->
+              <div class="accordion" id="chapters">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                      Bab 1 - Perkenalan dengan Lumpu
+                    </button>
+                  </h2>
+                  <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Mengenal sosok Lumpu, seorang gadis dengan kekuatan spesial yang tinggal di dunia paralel. Bagaimana dia menemukan kekuatannya dan menghadapi tantangan pertamanya.</p>
+                      <p>Perjalanan awal Lumpu mengungkap misteri dunia paralel dan bertemu dengan karakter-karakter kunci yang akan membantunya dalam petualangan.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                      Bab 2 - Kekuatan Tersembunyi
+                    </button>
+                  </h2>
+                  <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Lumpu mulai menguasai kekuatan spesialnya dan belajar rahasia-rahasia baru tentang dunia paralel. Petualangan dan tantangan yang semakin kompleks menguji kemampuannya.</p>
+                      <p>Pertemuan dengan tokoh-tokoh penting dari serial Bumi yang membantu Lumpu memahami perannya dalam keseimbangan dunia paralel.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-3">
+                      Bab 3 - Misteri Dunia Paralel
+                    </button>
+                  </h2>
+                  <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Pengungkapan misteri besar tentang dunia paralel dan hubungannya dengan karakter-karakter dari serial Bumi sebelumnya. Lumpu menemukan kebenaran mengejutkan tentang masa lalunya.</p>
+                      <p>Pertarungan sengit dan pilihan sulit yang harus dihadapi Lumpu demi menyelamatkan keseimbangan dunia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                      Bab 4 - Persahabatan dan Pengorbanan
+                    </button>
+                  </h2>
+                  <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Nilai persahabatan dan pengorbanan diuji ketika Lumpu harus membuat keputusan yang mempengaruhi nasib teman-temannya dan dunia paralel.</p>
+                      <p>Pertemuan tak terduga dengan karakter-karakter kunci yang mengungkap lebih banyak misteri tentang kekuatan Lumpu.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                      Bab 5 - Takdir Seorang Lumpu
+                    </button>
+                  </h2>
+                  <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Klimaks cerita dimana Lumpu harus menghadapi takdirnya dan membuat keputusan yang akan mengubah dunia paralel selamanya.</p>
+                      <p>Pengungkapan rahasia terbesar tentang asal-usul kekuatan Lumpu dan hubungannya dengan karakter-karakter legendaris serial Bumi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+        <div class="text-center">
+            <h2><i class="bi bi-stars"></i>Ulasan Pembaca</h2>
+            <p class="lead">Apa kata pembaca tentang buku Lumpu...</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-8">
+            <div class="list-group">
+                <div class="list-group-item py-3">
+                <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Petualangan yang Menakjubkan!</h5>
+                <p class="mb-1">Novel yang luar biasa! Tere Liye berhasil membuat karakter Lumpu sangat hidup dan relatable. Misteri-misteri yang diungkap sepanjang cerita membuat saya tidak bisa berhenti membaca. Sempurna sebagai bagian dari serial Bumi!</p>
+                <small>Ulasan oleh Ratih di Goodreads</small>
+                </div>
+                <div class="list-group-item py-3">
+                <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Serial Bumi Semakin Menarik</h5>
+                <p class="mb-1">Karakter Lumpu membawa perspektif baru yang segar dalam serial Bumi. Detail dunia paralel yang dieksplorasi sangat kaya dan imajinatif. Interaksi dengan karakter dari buku-buku sebelumnya juga sangat memuaskan!</p>
+                <small>Ulasan oleh Ahmad di Instagram</small>
+                </div>
+                <div class="list-group-item py-3">
+                <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Kisah yang Mengharukan</h5>
+                <p class="mb-1">Tere Liye berhasil menggambarkan perjuangan dan pengorbanan dengan sangat menyentuh. Tema persahabatan dan kesetiaan dalam buku ini sangat kuat. Hanya saja ada beberapa plot twist yang agak mudah ditebak.</p>
+                <small>Ulasan oleh Dina di Twitter</small>
+                </div>
+                <div class="list-group-item py-3">
+                <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Wajib Baca untuk Penggemar Serial Bumi!</h5>
+                <p class="mb-1">Buku ini memberikan jawaban atas banyak pertanyaan yang muncul di buku-buku sebelumnya. Penggambaran dunia paralel sangat detail dan memikat. Lumpu adalah tambahan yang sempurna untuk serial ini.</p>
+                <small>Ulasan oleh Budi di Tokopedia</small>
+                </div>
+                <div class="list-group-item py-3">
+                <div class="pb-2">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Petualangan yang Tak Terlupakan</h5>
+                <p class="mb-1">Alur cerita yang sangat menarik dan karakter yang berkembang dengan baik. Tere Liye berhasil memadukan unsur fantasi, persahabatan, dan nilai-nilai moral dengan sempurna dalam buku ini.</p>
+                <small>Ulasan oleh Sinta di Shopee</small>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <section id="contact">
+        <div class="container-lg">
+        
+        <div class="text-center">
+            <h2>Hubungi Kami</h2>
+            <p class="lead">Punya pertanyaan? Isi form di bawah untuk menghubungi tim kami...</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+            
+            <form>
+                <label for="email" class="form-label">Alamat Email:</label>
+                <div class="input-group mb-4">
+                <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                </span>
+                <input type="text" id="email" class="form-control" placeholder="contoh: nama@email.com" />
+                </div>
+                <label for="name" class="form-label">Nama:</label>
+                <div class="mb-4 input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                </span>
+                <input type="text" id="name" class="form-control" placeholder="Masukkan nama Anda" />
+                </div>
+                <label for="subject" class="form-label">Apa yang ingin Anda tanyakan?</label>
+                <div class="mb-4 input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                </span>
+                <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pertanyaan tentang harga</option>
+                    <option value="content">Pertanyaan tentang isi buku</option>
+                    <option value="shipping">Pertanyaan tentang pengiriman</option>
+                    <option value="other">Pertanyaan lainnya</option>
+                </select>
+                </div>
+                <div class="mb-4 mt-5 form-floating">
+                <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                <label for="query">Tulis pertanyaan Anda...</label>
+                </div>
+                <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Kirim</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- get updates / modal trigger -->
+    <section class="bg-light">
+        <div class="container">
+        <div class="text-center">
+            <h2>Stay in The Loop</h2>
+            <p class="lead">Get the latest updates as they happen...</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+            <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero exercitationem voluptatibus porro, hic asperiores fuga illo voluptates obcaecati deleniti veritatis sunt saepe quasi deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem odit quaerat, ipsum pariatur ratione maxime delectus fuga minus accusamus dolores iusto maiores accusantium cumque magnam placeat quia!</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                Register for Updates
+            </button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem laboriosam nihil minus voluptatibus harum aliquam consequatur pariatur inventore dignissimos illum excepturi ratione ipsum sit iusto alias eligendi fugit laborum?</p>
+            <label for="modal-email" class="form-label">Your email address:</label>
+            <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+          new bootstrap.Tooltip(t)
+        })
+    </script>
 </body>
 </html>
